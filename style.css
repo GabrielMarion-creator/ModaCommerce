@@ -1,0 +1,294 @@
+body
+{
+    height: 100%;
+    width: 100%;
+    background-color:azure;
+}
+
+#intestazione
+{
+    height: 200px;
+    width: 100%;
+    display:flex;
+    background-color:white;
+    align-content:center;
+    justify-content:center;
+}
+
+#img_logo {
+    float:left
+}
+
+#titolo 
+{
+    height: 100%;
+    width: 85%;
+}
+
+#titolo h1 
+{
+    line-height: 100%;
+    font-style: oblique;
+    text-align:center;
+    font-size: 80px;
+}
+
+#img_carrello 
+{
+    width:15%; 
+    height:100%; 
+    float:left;
+}
+
+#intestazione img 
+{
+    cursor: pointer;
+}
+
+
+#centro_pagina 
+{
+    height: fit-content;
+    width: 100%;
+    color: black;
+    font-size: 25px;
+    margin-top: 2%;
+    position: relative
+}
+
+#pop_up 
+{
+    height: 50%;
+    width: 20%;
+    background-color:white;
+    position: absolute;
+    right: 9%;
+    top: 25%;
+    border: 2px solid #dc1313;
+    font-size: 10px;
+    text-align: center;
+    display: none;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+#pop_up p 
+{
+    font-size: 15px;
+}
+
+#pop_up a 
+{
+    font-size: 15px;
+    color:red;
+    position:absolute;
+    cursor: pointer;
+    left:45%;
+    bottom:3%;
+}
+
+#totale
+{
+    font-size: 15px;
+    position:absolute;
+    cursor: pointer;
+    left:5%;
+    bottom:5%;
+}
+
+#link_laterali 
+{
+    height: 1000px;
+    width: 19%;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #808080;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#link_laterali li
+{
+    margin-top:10px
+}
+
+#link_laterali li a
+{
+    color:#666262;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+
+#link_laterali li a:hover 
+{
+    color: black;
+}
+
+#prodotti 
+{
+    height: 1000px;
+    width: 80.4%;
+    float: left;
+}
+
+#prodotto 
+{
+    height: 50%;
+    width: 50%;
+    float: left;
+    display: flex;
+    font-family:Cambria;
+    font-size:20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#prodotto image button 
+{
+    transition: transform 0.2s;
+}
+
+#image button:hover 
+{
+    transform: scale(1.05);
+}
+
+#prodotto h1
+{
+    font-size:35px;
+}
+
+#prodotti button 
+{
+    background-color: #808080;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    height: 50px;
+    width: 40%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#image 
+{
+    height: 50%;
+    width: 85%;
+    margin-top: 5%;
+}
+
+#image img
+{
+    transition: transform 0.2s;
+}
+
+#image img:hover 
+{
+    transform: scale(1.05);
+}
+
+#footer 
+{
+    height:50px;
+    width: 100%;
+    float:left;
+    text-align:center;
+    background-color:white;
+}
+
+#footer img 
+{
+        width:3.5%; 
+        height:100%
+}
+
+#footer a
+{
+    margin-left:1%;
+}
+
+@media only screen and (max-width : 500px) 
+{
+#titolo h1 
+{
+    line-height: 550%;
+    font-size: 30px;
+}
+
+#img_logo {
+    margin-top:3%;
+    width: 80%;
+    height: 80%;
+}
+
+#img_carrello
+{
+    margin-top: 10%;
+    width: 24%;
+    height: 50%;
+}
+
+#pop_up
+{
+    height: 50%;
+    width: 40%;
+    right: 9%;
+    top: 25%;
+    font-size: 10px;
+}
+
+#pop_up p
+{
+    font-size: 15px;
+}
+
+#pop_up a 
+{
+    font-size: 15px;
+    left: 45%;
+    bottom: 3%;
+}
+
+#link_laterali
+{
+    height:fit-content;
+    width: 98%;
+    text-align:center;
+    float:none;
+}
+
+#centro_pagina 
+{
+    height: fit-content;
+    width: 100%;
+}
+
+#prodotti 
+{
+    height:fit-content;
+    width: 100%;
+    float: none;
+}
+
+#prodotto
+{
+    height: 20%;
+    width: 100%;
+    float: none;
+}
+
+#footer 
+{
+    margin-top:3%;
+}
+
+#footer img 
+{
+    width: 10%;
+    margin-left:3%;
+}
+}
