@@ -12,13 +12,13 @@ body
     align-items: center;
     }
 
-    img a{
+    a img{
       width: 400px;
       border-radius: 25px; /* Arrotonda gli angoli */
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Aggiunge ombra */
       transition: transform 0.3s ease;
     }
 
-    img a:hover {
+    a img:hover {
       transform: scale(1.05); /* Leggero effetto al passaggio */
     }
