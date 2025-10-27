@@ -1,24 +1,32 @@
-body
-{
-    height: 100%;
-    width: 100%;
-}
+body {
+      margin: 0;
+      height: 100vh; /* Occupa l'intera finestra */
+      display: flex;
+      flex-direction: column; /* Divide lo spazio in verticale */
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f2f4ff;
+    }
 
     /* Ogni metà della pagina */
     .metà {
-      height: 50%;
-      width: 100%;/* Ogni sezione occupa metà dello schermo */
+      flex: 1; /* Occupa metà della pagina */
       display: flex;
-    align-items: center;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: background-color 0.3s ease;
     }
 
-    a img{
-      width: 100%;
-      border-radius: 25px; /* Arrotonda gli angoli */
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Aggiunge ombra */
-      transition: transform 0.3s ease;
+    /* Le immagini */
+    a img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 25px; /* Spigoli curvi */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     a img:hover {
-      transform: scale(1.05); /* Leggero effetto al passaggio */
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     }
