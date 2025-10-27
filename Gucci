@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immagine centrata</title>
+  <style>
+    /* Stile di base per la pagina */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f0f4ff, #d8e1ff);
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* Immagine centrata */
+    img {
+      max-width: 80%;
+      max-height: 70vh;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Bottone "Torna indietro" */
+    .btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background-color: #3b5bdb;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #364fc7;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Immagine -->
+  <img src="immagini/foto.jpg" alt="Foto esempio">
+
+  <!-- Bottone per tornare all'index -->
+  <button class="btn" onclick="window.location.href='index.html'">⬅ Torna alla Home</button>
+</body>
+</html>
