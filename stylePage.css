@@ -1,0 +1,45 @@
+body{
+    margin: auto;
+}
+
+.half{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    border-style: none;
+}
+
+.half:hover{
+    transform: scale(0.90);
+    border-radius: 15px;
+}
+
+#fauna{
+    background: url(../images/faunaBackgound.png) ;
+    background-size: cover;
+}
+
+#faunaBtn{
+    color: white;
+}
+
+
+#flora{
+    background: url(../images/floraBackround.jpg) ;
+    background-size: cover;
+}
+
+#floraBtn{
+    color: green;
+}
+
+.btn{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 70px;
+    border-style: none;
+    cursor: pointer;
+}
