@@ -305,7 +305,24 @@ body
     text-align: center;
 }
 
+#imageBrand
+{
+    height: 100%;
+    width: 100%;
 }
+
+#imageBrand img
+{
+    transition: transform 0.2s;
+}
+
+#imageBrand img:hover 
+{
+    transform: scale(1.05);
+}
+
+}
+
 
 
 
