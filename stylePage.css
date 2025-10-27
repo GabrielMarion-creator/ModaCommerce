@@ -1,32 +1,19 @@
-    /* Stile base per la pagina */
-    body {
-      margin: 0;
-      height: 100vh; /* 100% altezza finestra */
-      display: flex;
-      flex-direction: column;
-      font-family: "Segoe UI", sans-serif;
-    }
+body
+{
+    height: 100%;
+    width: 100%;
+}
 
     /* Ogni metà della pagina */
     .metà {
-      flex: 1; /* Ogni sezione occupa metà dello schermo */
+      height: 50%;
+      width: 100%;/* Ogni sezione occupa metà dello schermo */
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden; /* Nasconde eventuali bordi dell'immagine */
     }
 
-    /* Prima metà (sopra) */
-    .top {
-      background-color: #f0f4ff;
-    }
-
-    /* Seconda metà (sotto) */
-    .bottom {
-      background-color: #e8ecff;
-    }
-
-    /* Immagini */
     img {
       max-width: 100%;
       max-height: 100%;
