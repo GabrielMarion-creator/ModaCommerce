@@ -1,45 +1,40 @@
-body{
-    margin: auto;
-}
+    /* Stile base per la pagina */
+    body {
+      margin: 0;
+      height: 100vh; /* 100% altezza finestra */
+      display: flex;
+      flex-direction: column;
+      font-family: "Segoe UI", sans-serif;
+    }
 
-.half{
-    height: 50%;
-    width: 100%;
-    text-align: center;
-    transition: transform 1.0s;
-    border-style: none;
-}
+    /* Ogni metà della pagina */
+    .metà {
+      flex: 1; /* Ogni sezione occupa metà dello schermo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; /* Nasconde eventuali bordi dell'immagine */
+    }
 
-.half:hover{
-    transform: scale(0.90);
-    border-radius: 15px;
-}
+    /* Prima metà (sopra) */
+    .top {
+      background-color: #f0f4ff;
+    }
 
-#fauna{
-    background: url(../images/faunaBackgound.png) ;
-    background-size: cover;
-}
+    /* Seconda metà (sotto) */
+    .bottom {
+      background-color: #e8ecff;
+    }
 
-#faunaBtn{
-    color: white;
-}
+    /* Immagini */
+    img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
 
-
-#flora{
-    background: url(../images/floraBackround.jpg) ;
-    background-size: cover;
-}
-
-#floraBtn{
-    color: green;
-}
-
-.btn{
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    font-family: cursive;
-    font-size: 70px;
-    border-style: none;
-    cursor: pointer;
-}
+    img:hover {
+      transform: scale(1.05);
+    }
