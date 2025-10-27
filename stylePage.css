@@ -1,32 +1,24 @@
 body {
       margin: 0;
-      height: 100vh; /* Occupa l'intera finestra */
+      height: 100vh; 
       display: flex;
-      flex-direction: column; /* Divide lo spazio in verticale */
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f2f4ff;
     }
 
-    /* Ogni metà della pagina */
     .metà {
       flex: 1; /* Occupa metà della pagina */
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ;
     }
 
-    /* Le immagini */
     a img {
       max-width: 80%;
       max-height: 80%;
       border-radius: 25px; /* Spigoli curvi */
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s;
     }
 
     a img:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
     }
