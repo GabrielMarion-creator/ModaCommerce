@@ -1,24 +1,45 @@
-body {
-      margin: 0;
-      height: 100vh; 
-      display: flex;
-    }
+body{
+    margin: auto;
+}
 
-    .metà {
-      flex: 1; /* Occupa metà della pagina */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.3s ;
-    }
+.half{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    border-style: none;
+}
 
-    a img {
-      max-width: 80%;
-      max-height: 80%;
-      border-radius: 25px; /* Spigoli curvi */
-      transition: transform 0.3s;
-    }
+.half:hover{
+    transform: scale(0.90);
+    border-radius: 15px;
+}
 
-    a img:hover {
-      transform: scale(1.05);
-    }
+#fauna{
+    background: url(../images/faunaBackgound.png) ;
+    background-size: cover;
+}
+
+#faunaBtn{
+    color: white;
+}
+
+
+#flora{
+    background: url(../images/floraBackround.jpg) ;
+    background-size: cover;
+}
+
+#floraBtn{
+    color: green;
+}
+
+.btn{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 70px;
+    border-style: none;
+    cursor: pointer;
+}
