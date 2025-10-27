@@ -9,9 +9,6 @@ body
       height: 50%;
       width: 100%;/* Ogni sezione occupa metà dello schermo */
       display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; /* Nasconde eventuali bordi dell'immagine */
     }
 
     img {
