@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;  /* centra orizzontalmente */
   align-items: center;      /* centra verticalmente */
-  background-color: #000;   /* opzionale, per contrasto */
 }
 
 .container {
