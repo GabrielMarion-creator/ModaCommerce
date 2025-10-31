@@ -1,103 +1,88 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd​">
 <html>
-<head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js"></script>
+        <title>Home page</title>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    
+    <body>
+        <script src="https://www.gdprset.it/widget/gdpr-it-1.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
-    <title>Home page</title>
-    <meta name="viewport" content="width=device-width">
-</head>
+        <div id="intestazione">
+            <img id="img_logo" src="images/img_logo.png">
+            <div id="titolo">
+                <h1 style="color:Red" >Moda-commerce</h1>
+            </div>
+            <img id="img_carrello" src="images/carrello.png" onclick="showPop_up()">
+        </div>
 
-<body vlink="dimgray">
-    <script src="https://www.gdprset.it/widget/gdpr-it-1.js" type="text/javascript"></script>
+        <div id="pop_up">
+            <h1>CARRELLO</h1>
+            <p id="totale" style="float:left"></p>
+            <a onclick="showPop_up()">ESCI</a>
+        </div>
 
-    <div id="intestazione">
+        <div id="centro_pagina">
+
+            <div id="link_laterali">
+                <h2>Pagine:</h2>
+                <ul>
+                    <li><a href="pagina1.html">Pagina 1</a></li>
+                    <li><a href="pagina2.html">Pagina 2</a></li>
+                </ul>
+            </div>
+            
+            <div id="prodotti">
         
-        <img id="img_logo" src="images/img_logo.png">
-
-        <div id="titolo">
-            <h1 style="color:Red" >Moda-commerce</h1>
-        </div>
-
-        <img id="img_carrello" src="images/carrello.png" onclick="showPop_up()">
-
-    </div>
-
-    <div id="pop_up">
-
-        <h1>CARRELLO</h1>
-
-        <p id="totale" style="float:left"></p>
-
-        <a onclick="showPop_up()">ESCI</a>
-
-    </div>
-
-    <div id="centro_pagina">
-
-        <div id="link_laterali">
-
-            <h2>Pagine:</h2>
-
-            <ul>
-                <li><a href="pagina1.html">Pagina 1              </a></li>
-                <li><a href="pagina2.html">Pagina 2              </a></li>
-            </ul>
-        </div>
-
-    <div id="prodotti">
-
-        <div id="prodotto">
-            <div id="image">
-                <img src="images/maglia_LV.png" style="width: 100%; height: 100%; border-radius: 20px">
-                <h1>T-SHIRT LV</h1>
-                <h3>200$</h3>
-                <button type="button" id="0" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
+                <div id="prodotto">
+                    <div id="image">
+                        <img src="images/maglia_LV.png" style="width: 100%; height: 100%; border-radius: 20px">
+                        <h1>T-SHIRT LV</h1>
+                        <h3>200$</h3>
+                        <button type="button" id="0" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
+                    </div>
+                </div>
+        
+                <div id="prodotto">
+                    <div id="image">
+                        <img src="images/maglia_Gucci.png" style="width: 100%; height: 100%; border-radius: 20px">
+                        <h1>T-SHIRT GUCCI</h1>
+                        <h3>300$</h3>
+                        <button type="button" id="1" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
+                    </div>
+                </div>
+        
+                <div id="prodotto">
+                    <div id="image">
+                        <img src="images/maglia_Nike.png" style="width: 100%; height: 100%; border-radius: 20px">
+                        <h1>T-SHIRT NIKE</h1>
+                        <h3>50$</h3>
+                        <button type="button" id="2" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
+                    </div>
+                </div>
+        
+                <div id="prodotto">
+                    <div id="image">
+                        <img src="https://balenciaga.dam.kering.com/m/2e0e796f95b05282/Medium-787349TRVW91055_F.jpg?v=1" style="width: 100%; height: 100%; border-radius: 20px">
+                        <h1>T-SHIRT BL</h1>
+                        <h3>100$</h3>
+                        <button type="button" id="3" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
+                    </div>
+                </div>
+        
             </div>
         </div>
 
-        <div id="prodotto">
-            <div id="image">
-                <img src="images/maglia_Gucci.png" style="width: 100%; height: 100%; border-radius: 20px">
-                <h1>T-SHIRT GUCCI</h1>
-                <h3>300$</h3>
-                <button type="button" id="1" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
-            </div>
+        <div id="footer">
+            <a href="https://www.instagram.com/_gabrielmarion_/"><img src="images/instagram_logo.png"></a>
+            <a href="https://it-it.facebook.com/"               ><img src="images/facebook_logo.png" ></a>
+            <a href="https://www.google.it/"                    ><img src="images/google_logo.png"   ></a>
+            <a href="https://twitter.com/"                      ><img src="images/twitter_logo.png"  ></a>
         </div>
-
-        <div id="prodotto">
-            <div id="image">
-                <img src="images/maglia_Nike.png" style="width: 100%; height: 100%; border-radius: 20px">
-                <h1>T-SHIRT NIKE</h1>
-                <h3>50$</h3>
-                <button type="button" id="2" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
-            </div>
-        </div>
-
-        <div id="prodotto">
-            <div id="image">
-                <img src="https://balenciaga.dam.kering.com/m/2e0e796f95b05282/Medium-787349TRVW91055_F.jpg?v=1" style="width: 100%; height: 100%; border-radius: 20px">
-                <h1>T-SHIRT BL</h1>
-                <h3>100$</h3>
-                <button type="button" id="3" onclick="aggiungi_prodotto(this.id)">aggiungi al carrello</button>
-            </div>
-        </div>
-
-    </div>
-    </div>
-
-    <div id="footer">
-
-        <a href="https://www.instagram.com/_gabrielmarion_/"><img src="images/instagram_logo.png"></a>
-        <a href="https://it-it.facebook.com/"               ><img src="images/facebook_logo.png" ></a>
-        <a href="https://www.google.it/"                    ><img src="images/google_logo.png"   ></a>
-        <a href="https://twitter.com/"                      ><img src="images/twitter_logo.png"  ></a>
-
-    </div>
-
-</body>
-
+    </body>
 </html>
+
 
 
 
