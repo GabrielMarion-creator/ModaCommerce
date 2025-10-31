@@ -1,32 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
-  margin: 0;
   display: flex;
+  justify-content: center;  /* centra orizzontalmente */
+  align-items: center;      /* centra verticalmente */
+  background-color: #000;   /* opzionale, per contrasto */
 }
 
 .container {
   display: flex;
   height: 80%;
-  width: 100%;
+  width: 90%;
+  overflow: hidden;         /* evita che le immagini escano */
 }
 
-        .half {
-            flex: 1;
-            position: relative;
-        }
+.half {
+  flex: 1;
+  position: relative;
+}
 
-        .half img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s ease, filter 0.5s ease;
-            transform: scale(1);
-            filter: brightness(1);
-        }
+.half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform: scale(1);
+  filter: brightness(1);
+}
 
-        /* Effetto di rientro quando si passa il mouse */
-        .half:hover img {
-            transform: scale(0.85);
-            filter: brightness(0.8);
-        }
+/* Effetto hover */
+.half:hover img {
+  transform: scale(0.85);
+  filter: brightness(0.8);
+}
